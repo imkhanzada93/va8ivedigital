@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', 'ProductController@importExportView');
+Route::get('export', 'ProductController@export')->name('export');
+Route::post('import', 'ProductController@import')->name('import');
