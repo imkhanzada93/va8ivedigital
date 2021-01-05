@@ -3,7 +3,6 @@
 @section('content')
     <div class="card-header">
         Product Import
-        <a href="{{ url('sale') }}">Sale</a>
     </div>
     <div class="card-body">
         <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data">
@@ -12,6 +11,7 @@
             <br>
             <button class="btn btn-success">Import Product</button>
             <a class="btn btn-warning" href="{{ url('sample/product.csv') }}">Export Product Sample</a>
+            <a class="btn btn-primary" href="{{ url('sale') }}">Sale</a>
         </form>
     </div>
 @endsection
