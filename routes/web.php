@@ -15,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'ProductController@importExportView');
-Route::get('export', 'ProductController@export')->name('export');
 Route::post('import', 'ProductController@import')->name('import');
+
+
+
+Route::get('/sale', 'SaleController@index');
