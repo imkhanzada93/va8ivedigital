@@ -3,6 +3,7 @@
 @section('content')
     <div class="card-header">
         Product Import
+        <a href="{{ url('sale') }}">Sale</a>
     </div>
     <div class="card-body">
         <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data">
